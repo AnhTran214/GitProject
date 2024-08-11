@@ -3,10 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <title>index</title>
+    <!--<style> là định dạng CSS cho trang web, ta có thể tạo 1 file CSS riêng rồi import vào-->
+    <style>
+        body {
+            background-color: deepskyblue;
+        }
+        table, th, td {
+            border: 1px solid white;
+        }
+        h1 {
+           color: brown;
+            text-align: center;
+            background-color: white;
+        }
+    </style>
+    <!-- thẻ <link> dùng để tạo đường dẫn dẫn file .css vào HTML-->
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Xin chào đây là trang index</h1>
-    <p> Hello CodeGym</p>
-    <a href="http://localhost:63342/GitProject/Module_1/news.html?_ijt=71ipv4ma6ca1mt048sl1vferu5&_ij_reload=RELOAD_ON_SAVE">Chuyển sang trang news</a>
+    <h1 id="H1"></h1> <!--thẻ tiêu đề có từ h1 -> h6-->
+    <p title="đây là tooltip"> Hello CodeGym</p> <!--thẻ tạo đoạn văn bản-->
+    <hr> <!--thẻ gạch ngang-->
+    <!--thẻ tạo đường link liên kết đến trang khác-->
+    <!--thuộc tính target hiển thị cách mở 1 trang web khác-->
+    <a href="http://localhost:63342/GitProject/Module_1/news.html?_ijt=71ipv4ma6ca1mt048sl1vferu5&_ij_reload=RELOAD_ON_SAVE">
+        <img src="http://bob.codegym.vn/assets/images/Codegym-bob-xh100.png"
+             style="border:0;">
+    </a>
+    <br> <br> <!--thẻ xuống dòng-->
+    <img src="https://spacet-release.s3.ap-southeast-1.amazonaws.com/img/blog/2023-10-06/mot-binh-hoa-tulip-hong-de-ban-giup-ca-khong-gian-tro-nen-dep-va-sang-trong-hon-651faff1c9649b0ef51da9b7.webp" alt="Hoa tulip" width="400" height="500" style="float: left">
+    <!--Thuộc tính alt là hiển thị ký tự để thay thế hình ảnh trong trường hợp hình ảnh chưa load kịp hoặc mất do mạng hay lý do khác mà không hiển thị được-->
+    <!--Thuộc tính style="float: left/right" là đặt vị trí ảnh ở vị trí nào mình muốn-->
+    <!--thẻ pre dùng để hiển thị 1 bài thơ, nó sẽ giữ lại khoảng trắng và xuống dòng-->
+    <pre>
+        Bước tới Đèo Ngang, bóng xế tà,
+        Cỏ cây chen đá, lá chen hoa.
+        Lom khom dưới núi, tiều vài chú,
+        Lác đác bên sông, chợ mấy nhà.
+        Nhớ nước đau lòng con quốc quốc,
+        Thương nhà mỏi miệng cái gia gia.
+        Dừng chân đứng lại trời, non, nước,
+        Một mảnh tình riêng ta với ta.
+    </pre>
+    <!--#H1 dùng bookmark để nhảy đến tiêu đề index (khai báo id trên thẻ muốn nhảy đến) -->
+    <a href="#H1">nhảy đến Xin chào đây là trang index</a>
+    <br>
+    <!--action chứa nơi mà mình muốn gửi dữ liệu tới-->
+    <!--method là phương thức để đưa dữ liệu đến link mà mình muốn đưa đến-->
+    <form action="" method="post">
+        username: <input type="text">
+        password<input type="password">
+        <textarea></textarea>
+        <button>Đăng nhập</button>
+        <select>
+            <option>Nam</option>
+            <option>Nữ</option>
+        </select>
+    </form>
+    <br>
+    <table width="1000">
+        <tr>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Tuổi</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ABC</td>
+            <td>20</td>
+        </tr>
+    </table>
+<!--    Danh sách sắp xếp không theo thứ tự-->
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Fruit</li>
+    </ul>
+<!--    Danh sách sắp xếp theo thứ tự-->
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Fruit</li>
+    </ol>
+    <br>
+    <br>
+    <br>
+<!-- Danh sách miêu tả-->
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black color</dd>
+        <dt>Milk</dt>
+        <dd>- white color</dd>
+    </dl>
+<!--Danh sách lồng danh sách-->
+    <ul>
+        <li> Coffee </li>
+        <li>
+            Tea
+            <ul>
+                <li>Green Tea</li>
+                <li>Black Tea</li>
+            </ul>
+        </li>
+        <li> Milk &ltcc;</li>
+<!--    &ltcc; gọi là HTML entity    -->
+    </ul>
 </body>
 </html>
+<!--Nhập trực tiếp JS vào file HTML qua thẻ <script>-->
+<!--<script>-->
+<!--    var h1 = "Xin chào đây là trang index";-->
+<!--    // gán giá trị biến h1 cho thuộc tính id có tên là H1 để hiển thị-->
+<!--    document.getElementById("H1").innerHTML = h1;-->
+<!--</script>-->
+<!--Trỏ tới 1 file JS bên ngoài-->
+<script src="index.js"></script>
