@@ -50,15 +50,20 @@
     <br>
     <!--action chứa nơi mà mình muốn gửi dữ liệu tới-->
     <!--method là phương thức để đưa dữ liệu đến link mà mình muốn đưa đến-->
+    <button id = "Like" onclick="onClick()">Like</button>
     <form action="" method="post">
-        username: <input type="text">
-        password<input type="password">
-        <textarea></textarea>
-        <button>Đăng nhập</button>
-        <select>
-            <option>Nam</option>
-            <option>Nữ</option>
-        </select>
+<!--    <fieldset> Nhóm các dữ liệu của biểu mẫu lại với nhau    -->
+        <fieldset>
+            <legend>Login</legend>
+            username: <input type="text">
+            password<input type="password">
+            <textarea></textarea>
+
+            <select>
+                <option>Nam</option>
+                <option>Nữ</option>
+            </select>
+        </fieldset>
     </form>
     <br>
     <table width="1000">
@@ -108,6 +113,14 @@
         <li> Milk &ltcc;</li>
 <!--    &ltcc; gọi là HTML entity    -->
     </ul>
+    <form>
+        <input type="radio" name="gender" value="male" checked>Male <br>
+        <input type="radio" name="gender" value="female" checked>Female <br>
+    </form>
+    <form>
+        <input type="checkbox" name="vehicle1" value="Bike">I have a bike<br>
+        <input type="checkbox" name="vehicle2" value="Car">I have a car<br>
+    </form>
 </body>
 </html>
 <!--Nhập trực tiếp JS vào file HTML qua thẻ <script>-->
@@ -117,4 +130,5 @@
 <!--    document.getElementById("H1").innerHTML = h1;-->
 <!--</script>-->
 <!--Trỏ tới 1 file JS bên ngoài-->
+<!--nên để đường dẫn JS ở cuối cùng tránh không load được những phần không thao tác mà chỉ hiển thị vd như chỗ thẻ h1-->
 <script src="index.js"></script>
