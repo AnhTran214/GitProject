@@ -1,3 +1,5 @@
 .wufoo {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
 }
+/*Dấu chấm trước wufoo là do đây là 1 hàm cho class gọi, nếu là id thì đổi thành dấu #
+class thì dùng lại được cho nhiều thẻ, còn id chỉ dùng được cho 1 thẻ duy nhất*/

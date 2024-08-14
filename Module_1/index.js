@@ -1,4 +1,4 @@
-var h1 = "Xin chào đây là trang index đã trỏ vào 1 file JS";
+let h1 = "Xin chào đây là trang index đã trỏ vào 1 file JS";
 //document.getElementById("H1") tương tác với phần tử trong HTML có id là H1
 // gán giá trị biến h1 cho thuộc tính id có tên là H1 để hiển thị
 document.getElementById("H1").innerHTML = h1;
