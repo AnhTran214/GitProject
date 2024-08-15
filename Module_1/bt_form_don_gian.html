@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tạo form đơn giản</title>
+</head>
+<body style="background-color: deepskyblue; padding: 10px">
+<!--Phần 1-->
+        <form style="width: 40%; background-color: white">
+                <table style="width: 100%; padding: 10px">
+                    <tr>
+                        <th colspan="4" style="background-color: orange; padding: 5px; color: white">SỞ THÍCH CỦA BẠN</th>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td style="text-align: right ; color: blue">Họ và tên</td>
+                        <td colspan="3"><input type="text" name="yourname" style="width: 300px"></td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td style="text-align: right; color: blue">Email</td>
+                        <td colspan="3"><input type="text" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" style="vertical-align: top; text-align: right; color: blue">Sở thích</td>
+                        <td style="width: 100px; color: orange"><input type="checkbox" name="thethao" style="">Thể thao</td>
+                        <td style="width: 100px; color: orange"><input type="checkbox" name="amnhac">Âm nhạc</td>
+                        <td style="color: orange"><input type="checkbox" name="docsach">Đọc sách</td>
+                    </tr>
+                    <tr>
+                        <td style="color: orange"><input type="checkbox" name="luotweb">Lướt web</td>
+                        <td style="color: orange"><input type="checkbox" name="choigame">Chơi game</td>
+                        <td style="color: orange"><input type="checkbox" name="dienanh">Điện ảnh</td>
+                    </tr>
+                    <tr>
+                        <td style="color: orange"><input type="checkbox" name="dulich">Du lịch</td>
+                    </tr>
+                    <tr style="height: 40px">
+                        <td><input type="button" value="Gửi thông tin"></td>
+                        <td><input type="reset" value="Nhập lại"></td>
+                    </tr>
+                </table>
+        </form>
+<br>
+<br>
+<!---------------------------------------------------------------------------------------------------------------------------------->
+<!--Phần 2-->
+        <form style="width: 40%; background-color: gold">
+            <table style="width: 100%; padding: 5px">
+                <tr>
+                    <th colspan="3" style="background-color: aquamarine; padding: 5px; color: blue; text-align: left">ĐĂNG KÝ HỌC VIÊN</th>
+                </tr>
+                <tr style="height: 30px">
+                    <td style="color: blue">Họ và tên</td>
+                    <td><input type="text" name="yourname" style="width: 300px"></td>
+                </tr>
+                <tr style="height: 30px">
+                    <td style="color: blue">Ngày sinh</td>
+                    <td><input type="text" name="birthday" style="width: 150px"></td>
+                </tr>
+                <tr>
+                    <td style="color: blue">Giới tính</td>
+                    <td style="color: black">
+                <!--phải trùng name thì mới có thể chọn 1 trong 2 cái-->
+                        <input type="radio" name="gioitinh" value="nam">Nam
+                        <input type="radio" name="gioitinh" value="nu">Nữ
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td style="color: blue">Địa chỉ</td>
+                    <td><textarea name="diachi"></textarea></td>
+                </tr>
+                <tr>
+                    <td style="color: blue">Lớp</td>
+                    <td><select name="chonlop" style="width: 100px">
+                        <option value="" disabled selected>--Chọn lớp--</option>
+                        <option value="lop1">Lớp 1</option>
+                        <option value="lop2">Lớp 2</option>
+                        <option value="lop3">Lớp 3</option>
+                    </select></td>
+                </tr>
+                <tr style="height: 30px">
+                    <td style="color: blue">Email</td>
+                    <td><input type="text" name="email" style="width: 150px"></td>
+                </tr>
+                <tr style="height: 30px">
+                    <td style="color: blue">Điện thoại</td>
+                    <td><input type="text" name="phone" style="width: 150px"></td>
+                </tr>
+                <tr style="height: 40px">
+                    <td></td>
+                    <td>
+                        <input type="button" value="Đăng ký">
+                        <input type="reset" value="Nhập lại">
+                    </td>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>
