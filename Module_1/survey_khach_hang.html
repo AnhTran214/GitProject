@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey khách hàng</title>
+    <link rel="stylesheet" href="survey_khach_hang.css">
+</head>
+<body>
+    <form>
+        <h2>Market Research Survey</h2>
+        <p>Please take a few moments to complete this satisfaction survey.</p>
+        <hr>
+        <p style="font-weight: bold">What is your age range?</p>
+        <select style="width: 50%">
+            <option>18-24</option>
+            <option>25-34</option>
+            <option>35-50</option>
+            <option>50+</option>
+        </select>
+        <p style="font-weight: bold">What is your yearly income range?</p>
+        <select style="width: 50%">
+            <option>$0-$25,000</option>
+            <option>$25,001-$50,000</option>
+            <option>$50,001-$100,000</option>
+            <option>$100,000+</option>
+        </select>
+        <p style="font-weight: bold">Gender</p>
+        <input name="gender" type="radio" value="male">Male <br>
+        <input name="gender" type="radio" value= "female">Female <br>
+        <p style="font-weight: bold">Which of the following products have your purchased in the last 2 months. Please check all that apply.</p>
+        <input type="checkbox" name="pr1" value="Product1"> Product 1 <br>
+        <input type="checkbox" name="pr2" value="Product2"> Product 2 <br>
+        <input type="checkbox" name="pr3" value="Product3"> Product 3 <br>
+        <p style="font-weight: bold">How often would you use our new product?</p>
+        <input name="npr" type="radio" value="daily">Daily <br>
+        <input name="npr" type="radio" value= "weekly">Weekly <br>
+        <input name="npr" type="radio" value= "monthly">Monthly <br>
+        <p style="font-weight: bold">What would you pay for the new product?</p>
+        <label>$</label> <input type="text" name="dollars" style="width: 70px">.<input type="text" name="cham" style="width: 20px">
+        <br> Dollars &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Cent
+        <p style="font-weight: bold">What features would you like to see in the new product</p>
+        <textarea style="width: 70%; height: 250px"></textarea>
+        <p>Please rate your level of agreement with the following statements.</p>
+        <table>
+            <tr>
+                <th></th>
+                <td>Strongly Disagree</td>
+                <td>Disagree</td>
+                <td>Agree</td>
+                <td>Strongly Agree</td>
+            </tr>
+            <tr>
+                <th>Our products are priced fairly</th>
+                <td><input name="1" type="radio" value="1">1</td>
+                <td><input name="1" type="radio" value="2">2</td>
+                <td><input name="1" type="radio" value="3">3</td>
+                <td><input name="1" type="radio" value="4">4</td>
+            </tr>
+            <tr>
+                <th>Our products are priced fairly</th>
+                <td><input name="2" type="radio" value="1">1</td>
+                <td><input name="2" type="radio" value="2">2</td>
+                <td><input name="2" type="radio" value="3">3</td>
+                <td><input name="2" type="radio" value="4">4</td>
+            </tr>
+            <tr>
+                <th>You would recommend our product to a friend or coworker</th>
+                <td><input name="3" type="radio" value="1">1</td>
+                <td><input name="3" type="radio" value="2">2</td>
+                <td><input name="3" type="radio" value="3">3</td>
+                <td><input name="3" type="radio" value="4">4</td>
+            </tr>
+        </table>
+        <br>
+        <button name="sButton" value="submit" style="width: 100px">Submit</button>
+    </form>
+</body>
+</html>
