@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành nhúng JS</title>
+</head>
+<body>
+        <!--C1 viết trực tiếp vào thộc tính của thẻ-->
+        <button type="button" onclick="alert('Xin chào C1')">Click me</button>
+        <!--C2 dùng thẻ script trực tiếp trong HTML-->
+        <button type="button" onclick="showMessage()">Click me 2</button>
+        <!--C3 tách js ra 1 file riêng-->
+        <button type="button" onclick="showMessage2()">Click me 3</button>
+</body>
+</html>
+<script>
+    function showMessage(){
+        alert("Xin chào C2")
+    }
+</script>
+<script src="TH_nhung_JS.js"></script>
