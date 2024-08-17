@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body>
+  <p onmouseover="mouseover()" onmouseout="mouseout()" id = "demo"> this is a text</p>
+</body>
+</html>
+<script>
+<!--1-->
+<!--  Dùng để thay đổi trạng thái khi di chuột vào đối tượng-->
+  function mouseover(){
+    document.getElementById("demo").style.color = "red";
+  }
+  // Dùng để thay đổi trạng thái khi di chuột ra khỏi đối tượng
+  function mouseout(){
+    document.getElementById("demo").style.color = "black";
+  }
+//   C2 phải xóa onmouseover="mouseover()" onmouseout="mouseout()"
+//   var demo = document.getElementById("demo");
+//   demo.addEventListener("mouseover", mouseover);
+//   demo.addEventListener("mouseout", mouseout);
+
+</script>

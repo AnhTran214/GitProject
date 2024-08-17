@@ -6,4 +6,5 @@ function onClick (){
     document.getElementById("Like").style.backgroundColor="blue" //thay đổi màu nền
     document.getElementById("Like").style.color="white" //thay đổi màu chữ
     document.getElementById("Like").innerText = "Dislike" //thay đổi nội dung khi nhấn vào nút
+    alert("Bạn đã thích bài viết");
 }

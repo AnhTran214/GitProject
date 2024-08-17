@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body>
+    <select id = "myselect">
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Mec">Mec</option>
+    </select>
+</body>
+</html>
+<script>
+<!--    C1-->
+    function do_something(){
+        var selectedValue = document.getElementById("myselect").value;
+        alert(selectedValue);
+    }
+// C2 xóa đi thuộc tính onchange="do_something()
+    var selectedElement = document.getElementById("myselect");
+    selectedElement.addEventListener("change", changeFunction);
+    function changeFunction(){
+        var selectValue = document.getElementById("myselect").value;
+        alert(selectValue);
+    }
+</script>
