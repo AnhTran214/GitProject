@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập biến, kiểu dữ liệu, toán tử</title>
+</head>
+<body>
+<!--Bài 1:  Viết chương trình nhập điểm của một sinh viên cho các môn: Vật lý, Hóa học, và Sinh học. Sau đó hiển thị điểm trung bình và tổng của những điểm này.-->
+    <form>
+        <h3>Bài 1:  Viết chương trình nhập điểm của một sinh viên cho các môn: Vật lý, Hóa học, và Sinh học. Sau đó hiển thị điểm trung bình và tổng của những điểm này.</h3>
+        <label for="vl">Nhập điểm Vật lý: </label> <input id="vl" type="number" name="vl">
+        <br><br>
+        <label for="hh">Nhập điểm Hóa học: </label> <input id="hh" type="number" name="hh">
+        <br><br>
+        <label for="sh">Nhập điểm Sinh học: </label> <input id="sh" type="number" name="sh">
+        <br><br>
+        <button type="button" id="bt" onclick="tinh_diem()">Tính điểm</button>
+        <br><br>
+        <label>Điểm tổng 3 môn: <label id="diemtong"></label></label>
+        <br><br>
+        <label>Điểm trung bình 3 môn: <label id = "diemTB"></label> </label>
+    </form>
+<!--Bài 2:  Viết chương trình nhập một giá trị là độ 0C (Celsius) và chuyển nó sang độ 0F (Fahrenheit). [Hướng dẫn: C/5 = (F-32)/9]-->
+    <form>
+        <h3>Bài 2:  Viết chương trình nhập một giá trị là độ 0C (Celsius) và chuyển nó sang độ 0F (Fahrenheit). [Hướng dẫn: C/5 = (F-32)/9]</h3>
+        <label for="doC">Nhập nhiệt độ (độ C): </label> <input id="doC" type="number" name = "doC" placeholder="Độ c"> &nbsp;
+        <button type="button" id="doF" onclick="doiDoF()">Đổi ra độ F</button>
+        <br><br>
+        <label>Kết quả: </label><label id="kq"></label>
+    </form>
+<!--Bài 3: Viết chương trình tính diện tích hình tròn S = 3,14*(r*r)-->
+    <form>
+        <h3>Bài 3: Viết chương trình tính diện tích hình tròn</h3>
+        <label for="r">Nhập bán kính hình tròn: </label> <input id="r" type="number" name="r"> &nbsp;
+        <button type="button" id = "Sht" onclick="tinh_S_ht()">Tính diện tích hình tròn</button>
+        <br><br>
+        <label>Kết quả: </label><label id="kqSht"></label>
+    </form>
+<!--Bài 4: Viết chương trình chu vi hình tròn C = r * 2 * 3.14-->
+    <form>
+        <h3>Bài 4: Viết chương trình chu vi hình tròn</h3>
+        <label for="r1">Nhập bán kính hình tròn: </label> <input id="r1" type="number" name="r"> &nbsp;
+        <button type="button" id = "Cht" onclick="tinh_C_ht()">Tính chu vi hình tròn</button>
+        <br><br>
+        <label>Kết quả: </label><label id="kqCht"></label>
+    </form>
+</body>
+</html>
+<script src="BT_bien_kdl_toantu.js"></script>
