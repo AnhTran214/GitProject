@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+  <form>
+    <table style="width: 50%">
+      <tr>
+        <th style="text-align: left"> Amount</th>
+        <th style="text-align: left"> From Currency</th>
+        <th style="text-align: left"> To Currency</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td><input id="amount" type="number" name="amount" placeholder="Enter the amount"></td>
+        <td>
+          <select id="fromCu">
+            <option>VND</option>
+            <option>USD</option>
+          </select>
+        </td>
+        <td>
+          <select id="toCu">
+            <option>USD</option>
+            <option>VND</option>
+          </select>
+        </td>
+        <td>
+          <button type="button" onclick="fun()">Convert</button>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Kết quả: </label> <label id="kq"></label></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
+<script src="cd_tien_te.js"></script>
