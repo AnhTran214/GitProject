@@ -16,3 +16,30 @@ function kiemTraTrinhDuyet(){
 
     }
 }
+//Bài 2
+function kiemTraA()
+{
+    let a = parseInt(document.getElementById("a").value);
+    switch (a){
+        case 0: alert("0");
+        break;
+        case 1: alert("1")
+            break;
+        case 2:
+        case 3:
+            alert("2,3");
+            break;
+        default: alert("Không hợp lệ!");
+    }
+}
+//Bài 3
+function kiemTraSo(){
+    let so = parseFloat(document.getElementById("so").value);
+    if(so > 0)
+    {
+        alert("1");
+    } else if (so < 0)
+    {
+        alert("-1");
+    } else alert("0");
+}
