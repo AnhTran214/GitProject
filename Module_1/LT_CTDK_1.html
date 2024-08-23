@@ -52,7 +52,52 @@
     </div>
 <!--Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ-->
     <div>
-
+        <form>
+            <h3>Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ</h3>
+            <table>
+                <tr>
+                    <th style="padding: 8px"><label>Nhập điểm kiểm tra miệng </label></th>
+                    <th style="padding: 8px"><label>Nhập điểm kiểm tra 15' </label></th>
+                    <th style="padding: 8px"><label>Nhập điểm kiểm tra giữa kỳ </label></th>
+                    <th style="padding: 8px"><label>Nhập điểm kiểm tra cuối kỳ </label></th>
+                </tr>
+                <tr>
+                    <td style="padding: 8px"><input id="ktm" name="ktm" type="number"></td>
+                    <td style="padding: 8px"><input id="kt15" name="kt15" type="number"></td>
+                    <td style="padding: 8px"><input id="ktgk" name="ktgk" type="number"></td>
+                    <td style="padding: 8px"><input id="ktck" name="ktck" type="number"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center"><button type="button" id="btTB" onclick="tinhTB()">Tính điểm TB</button></td>
+                    <td colspan="2" style="text-align: center"><button type="reset" id="reTB">Reset</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+<!--Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng-->
+    <div>
+        <form>
+            <h3>Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng</h3>
+            <label>Nhập mức doanh thu: </label><input id="dt" name="dt" type="number">
+            <br><br>
+            <button type="button" id="bthh" onclick="tinhHH()">Tính tiền hoa hồng</button>
+            <br><br>
+            <label>Tiền hoa hồng nhận được: </label><label id="thh"></label>
+        </form>
+    </div>
+<!--Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho
+(gs: Giá cước điện thoại cố định của một hãng viễn thông bao gồm cước thuê bao là 22 000 đồng/tháng
+và cước gọi là 800 đồng/ phút.)-->
+    <div>
+        <form>
+            <h3>Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho (gs: Giá cước điện thoại cố định của một hãng viễn thông bao gồm cước thuê bao là 22 000 đồng/tháng
+                và cước gọi là 800 đồng/ phút.) </h3>
+            <label>Nhập số phút đã gọi: </label><input id="minute" name="minute" type="number">
+            <br><br>
+            <button id="bt7" type="button" onclick="tinhCuocDt()">Tính cước điện thoại</button>
+            <br><br>
+            <label>Số tiền phải trả trong tháng là: </label><label id="tienThang"></label>
+        </form>
     </div>
 </body>
 </html>
