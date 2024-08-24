@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+<!--Bài 1: Chuyển từ độ C sang độ F.
+°C  x  9/5 + 32 = °F-->
+    <div>
+        <form>
+            <h3>Bài 1: Chuyển từ độ C sang độ F. °C  x  9/5 + 32 = °F</h3>
+            <label>Nhập nhiệt độ: </label><input type="number" id="nhietDo" name="nhietDo">
+            &nbsp; <label>Từ</label>
+            <select id="from">
+                <option>°C</option>
+                <option>°F</option>
+            </select> &nbsp; <label>Ra</label>
+            <select id="to">
+                <option>°F</option>
+                <option>°C</option>
+            </select>
+            <br><br>
+            <button id="bt1" type="button" onclick="tinh()">Đổi</button>
+            <br><br>
+            <label>Kết quả: </label><label id="kq1"></label>
+        </form>
+    </div>
+<!--Bài 2: Chuyển từ mét sang feet: ft =m * 3.2808-->
+<div>
+    <form>
+        <h3>Bài 2: Chuyển từ mét sang feet: ft =m * 3.2808</h3>
+        <label>Nhập đơn vị cần chuyển: </label><input type="number" id="dv" name="dv">
+        &nbsp; <label>Từ</label>
+        <select id="from1">
+            <option>met</option>
+            <option>feet</option>
+        </select> &nbsp; <label>Ra</label>
+        <select id="to1">
+            <option>feet</option>
+            <option>met</option>
+        </select>
+        <br><br>
+        <button id="bt2" type="button" onclick="tinh2()">Đổi</button>
+        <br><br>
+        <label>Kết quả: </label><label id="kq2"></label>
+    </form>
+</div>
+<!--Bài 3: Tính diện tích hình vuông khi biết cạnh a.-->
+    <div>
+        <form>
+            <h3>Bài 3: Tính diện tích hình vuông khi biết cạnh a.</h3>
+            <label>Nhập độ dài cạnh a: </label><input id="a" name="a" type="number">
+            <br><br>
+            <button id="bt3" type="button" onclick="tinhShv()"> Tính diện tích hình vuông</button>
+            <br><br>
+            <label>Kêt quả: </label><label id="kq3"></label>
+        </form>
+    </div>
+<!--Bài 4: Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b.-->
+    <div>
+        <form>
+            <h3>Bài 4: Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b.</h3>
+            <label>Nhập cạnh a: </label><input type="number" id="cd" name="cd">
+            <br><br>
+            <label>Nhập cạnh b: </label><input type="number" id="cr" name="cr">
+            <br><br>
+            <button id="bt4" type="button" onclick="tinhShcn()"> Tính diện tích hình chữ nhật</button>
+            <br><br>
+            <label>Kêt quả: </label><label id="kq4"></label>
+        </form>
+    </div>
+<!--Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.(S = 1/2 * (a * h))-->
+    <div>
+        <form>
+            <h3>Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.</h3>
+            <label>Nhập cạnh a: </label><input type="number" id="cc" name="cc">
+            <br><br>
+            <label>Nhập cạnh b: </label><input type="number" id="cday" name="cday">
+            <br><br>
+            <button id="bt5" type="button" onclick="tinhStgv()"> Tính diện tích hình tam giác vuông</button>
+            <br><br>
+            <label>Kêt quả: </label><label id="kq5"></label>
+        </form>
+    </div>
+<!--Bài 6: Giải phương trình bậc 1. (ax + b = 0)-->
+    <div>
+        <form>
+            <h3>Bài 6: Giải phương trình bậc 1 (ax + b = 0)</h3>
+            <label>Nhập số a: </label><input type="number" id="soa" name="soa">
+            <br><br>
+            <label>Nhập số b: </label><input type="number" id="sob" name="sob">
+            <br><br>
+            <button id="bt6" type="button" onclick="tinhPt1()"> Tính kết quả phương trình bậc 1</button>
+            <br><br>
+        </form>
+    </div>
+<!--Bài 7: Giải phương trình bậc 2. ax2+bx+c=0 (a≠0)-->
+    <div>
+        <form>
+            <h3>Bài 7: Giải phương trình bậc 2.</h3>
+            <label>Nhập số a: </label><input type="number" id="soa2" name="soa2">
+            <br><br>
+            <label>Nhập số b: </label><input type="number" id="sob2" name="sob2">
+            <br><br>
+            <label>Nhập số c: </label><input type="number" id="soc2" name="soc2">
+            <br><br>
+            <button id="bt7" type="button" onclick="tinhPt2()"> Tính kết quả phương trình bậc 2</button>
+            <br><br>
+        </form>
+    </div>
+<!--Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không. Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.-->
+    <div>
+        <h3>Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không. Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.</h3>
+        <label>Nhập số tuổi: </label><input type="number" id="tuoi" name="tuoi">
+        <br><br>
+        <button id="bt8" type="button" onclick="checkTuoi8()">Kiểm tra tuổi</button>
+    </div>
+<!--Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác. Điều kiện để a,b,c là cạnh của một tam giác là:-->
+    <div>
+        <h3>Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác.</h3>
+        <label>Nhập số a: </label><input type="number" id="soa9" name="soa9">
+        <br><br>
+        <label>Nhập số b: </label><input type="number" id="sob9" name="sob9">
+        <br><br>
+        <label>Nhập số c: </label><input type="number" id="soc9" name="soc9">
+        <br><br>
+        <button id="bt9" type="button" onclick="checkCanh()"> Kiểm tra cạnh tam giác</button>
+        <br><br>
+    </div>
+<!--Bài 10: Viết chương trình tính giá điện.-->
+    <div>
+        <form>
+            <h3>Bài 10: Viết chương trình tính giá điện.</h3>
+            <table style="width: 50%; border: 1px solid black;  border-collapse: collapse" >
+                <tr style="background-color: #dddddd">
+                    <th style="border: 1px solid black">Bậc thang</th>
+                    <th style="border: 1px solid black">Số điện</th>
+                    <th style="border: 1px solid black">Giá điện (đồng/kWh)</th>
+                </tr>
+                <tr style="text-align: center;border: 1px solid black">
+                    <td style="border: 1px solid black">Bậc thang 1</td>
+                    <td style="border: 1px solid black">0 - 50</td>
+                    <td style="border: 1px solid black">1806 đồng/kWh</td>
+                </tr>
+                <tr style="text-align: center;border: 1px solid black">
+                    <td style="border: 1px solid black">Bậc thang 2</td>
+                    <td style="border: 1px solid black">51 - 100</td>
+                    <td style="border: 1px solid black">1866 đồng/kWh</td>
+                </tr>
+                <tr style="text-align: center;border: 1px solid black">
+                    <td style="border: 1px solid black">Bậc thang 3</td>
+                    <td style="border: 1px solid black">101 - 200</td>
+                    <td style="border: 1px solid black">2167 đồng/kWh</td>
+                </tr>
+                <tr style="text-align: center;border: 1px solid black">
+                    <td style="border: 1px solid black">Bậc thang 4</td>
+                    <td style="border: 1px solid black">201 - 300</td>
+                    <td style="border: 1px solid black">2729 đồng/kWh</td>
+                </tr>
+                <tr style="text-align: center;border: 1px solid black">
+                    <td style="border: 1px solid black">Bậc thang 5</td>
+                    <td style="border: 1px solid black">301 - 400</td>
+                    <td style="border: 1px solid black">3050 đồng/kWh</td>
+                </tr>
+                <tr style="text-align: center;border: 1px solid black">
+                    <td style="border: 1px solid black">Bậc thang 6</td>
+                    <td style="border: 1px solid black">Trên 400</td>
+                    <td style="border: 1px solid black">3151 đồng/kWh</td>
+                </tr>
+            </table>
+            <br>
+            <label>Nhập vào số điện của bạn (kWh): </label><input id="sodien" name="sodien" type="number">
+            <br><br>
+            <button type="button" id="btGiadien" onclick="tinhGiaDien()">Tính giá điện phải trả</button>
+        </form>
+    </div>
+<!--Bài 11: Viết chương trình tính thuế thu nhập cá nhân.-->
+    <div>
+        <form>
+            <h3>Bài 11: Viết chương trình tính thuế thu nhập cá nhân.</h3>
+            <label>Nhập mức lương của bạn: </label><input type="number" id="luong" name="luong">
+            <br><br>
+            <button id="btluong" type="button" onclick="tinhLuong()">Tính thuế thu nhập cá nhân và lương nhận</button>
+            <br><br>
+            <label id="luongcb"></label>
+            <br><br>
+            <label id="sothue"></label>
+            <br><br>
+            <label id="luongnhan"></label>
+        </form>
+    </div>
+<!--Bài 12: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lãi con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.
+ràng buộc: số tiền nhập vào dương hay không, k đc quá lớn, số tháng không đc âm, và không được quá lớn-->
+    <div>
+        <form>
+            <h3>Bài 12: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lãi con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.</h3>
+            <label> Nhâp số tiền ban đầu bạn vay: </label><input id="tienvay" name="tienvay" type="number">&nbsp;VND
+            <br><br>
+            <label> Nhập vào số tháng vay: </label><input id="thangvay" name="thangvay" type="number">
+            <br><br>
+            <label> Nhập vào lãi suất: </label><input id="laisuat" name="laisuat" type="number">&nbsp;%/năm
+            <br><br>
+            <button id="kq12" type="button" onclick="tinhLaiSuat()">Tính lãi suất</button>
+        </form>
+    </div>
+</body>
+</html>
+<script src="LT_CTDK_2.js"></script>
