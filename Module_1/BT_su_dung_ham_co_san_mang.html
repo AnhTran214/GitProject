@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Sử dụng các hàm có sẵn của mảng</title>
+</head>
+<body>
+<!--Bài 1: Viết một chương trình Javascript để nối tất cả các phần tử trong một mảng chuỗi lại với nhau.
+Ví dụ có mảng chuỗi như sau: myColor = ["Red", "Green", "White", "Black"];
+Sau khi thực thi chương trình sẽ trả về dạng như sau :
+"Red,Green,White,Black"-->
+    <div>
+        <form>
+            <h3>Bài 1: Viết một chương trình Javascript để nối tất cả các phần tử trong một mảng chuỗi lại với nhau.
+                Ví dụ có mảng chuỗi như sau: myColor = ["Red", "Green", "White", "Black"];
+                Sau khi thực thi chương trình sẽ trả về dạng như sau :
+                "Red,Green,White,Black"</h3>
+            <label>Mảng sau khi được nối lại với nhau bằng toString: </label><label id="toStringArray"></label>
+            <br>
+            <label>Mảng sau khi được nối lại với nhau bằng join(): </label><label id="joinArray"></label>
+            <br>
+            <label>Mảng sau khi được nối lại với nhau bằng join("+"): </label><label id="joinArray2"></label>
+        </form>
+    </div>
+<!--Bài 2: Viết một chương trình nhận một số nhập vào và chèn dấu (-) giữa 2  số chẵn. Ví dụ nếu bạn nhập vào 025468 thì kết quả của chương trình sẽ là 0-254-6-8.-->
+    <div>
+        <form>
+            <h3>Bài 2: Viết một chương trình nhận một số nhập vào và chèn dấu (-) giữa 2  số chẵn. Ví dụ nếu bạn nhập vào 025468 thì kết quả của chương trình sẽ là 0-254-6-8.</h3>
+            <label>Chuỗi bạn vừa nhập: </label><label id="chuoi2"></label>
+            <label>Kết quả số bạn nhập vào: </label><label id="kq2"></label>
+        </form>
+    </div>
+<!--Bài 3: Viết một chương trình nhập vào một chuỗi và chuyển các ký tự chữ thường trong chuỗi vừa nhập sang thành dạng chữ hoa.
+Ví dụ: nếu bạn nhập vào chuỗi 'The Quick Brown Fox' kết quả của chương trình là 'tHE qUICK bROWN fOX'.-->
+    <div>
+        <form>
+            <h3>Bài 3: Viết một chương trình nhập vào một chuỗi và chuyển các ký tự chữ thường trong chuỗi vừa nhập sang thành dạng chữ hoa.
+                Ví dụ: nếu bạn nhập vào chuỗi 'The Quick Brown Fox' kết quả của chương trình là 'tHE qUICK bROWN fOX'.</h3>
+            <label>Nhập chuỗi ký tự: </label> <input id="chuoi3" name="chuoi3" type="text">
+            <br><br>
+            <button id="kq3" onclick="htChuoi()" type="button">Hiển thị kết quả</button>
+            <br><br>
+            <label>Chuỗi kết quả: </label><label id="chuoiKQ3"></label>
+        </form>
+    </div>
+</body>
+</html>
+<script src="BT_su_dung_ham_co_san_mang.js"></script>
