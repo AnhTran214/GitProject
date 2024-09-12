@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+    <div>
+        <form>
+            <h2>Temperature Converter</h2>
+            <p>Type a value in the Fahrenheit field to convert the value to Celcius:</p>
+            <label>Fahrenheit: </label>
+            <input id="fahren" name="fahren" placeholder="Fahrenheit"
+                   oninput="chuyenDoiNhietDo(this.value)" onchange="chuyenDoiNhietDo(this.value)" type="number">
+            <br>
+            <label>Celcius: </label><label id="result"></label>
+        </form>
+    </div>
+</body>
+</html>
+<script src="chuyen_doi_nhiet_do.js"></script>
