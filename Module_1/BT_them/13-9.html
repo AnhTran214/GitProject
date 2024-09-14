@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 13/9</title>
+</head>
+<body>
+<!--Bài 1	Nhập 1 mảng số từ bàn phím với độ dài n (n <=20)
+	Hiện thị mảng sau khi thêm mới các phần tử
+	Kiểm tra mảng vừa nhập.
+	Nếu mảng tăng dần đều thì hiện thị OK, không phải thì trả về NO
+	Ví dụ	Input	Output
+		        0,2,4,6,8	TRUE
+		       5,10,15,20	TRUE
+		       2,4,7,9	FALSE-->
+    <div>
+        <h3>Bài 1: Nhập 1 mảng số từ bàn phím với độ dài n (n <=20)
+            Hiện thị mảng sau khi thêm mới các phần tử
+            Kiểm tra mảng vừa nhập.
+            Nếu mảng tăng dần đều thì hiện thị OK, không phải thì trả về NO
+            </h3>
+        <form>
+            <label>Mảng vừa nhập: </label><label id="arr1"></label>
+            <br><br>
+            <label>Kiểm tra mảng đẹp: </label><label id="result1"></label>
+            <br><br>
+            <button id="bai1" type="button" onclick="bai_1()">Bài 1</button>
+        </form>
+    </div>
+<!--Kiểm tra 2 số có phải là cặp số thân thiết hay không.
+Cặp số thân thiết là tổng ước của số này (trừ chính số đó) bằng với số còn lại.
+Ví dụ: cặp số  220 và 284-->
+<div>
+    <form>
+        <h3>Kiểm tra 2 số có phải là cặp số thân thiết hay không.
+            Cặp số thân thiết là tổng ước của số này (trừ chính số đó) bằng với số còn lại.
+            Ví dụ: cặp số  220 và 284</h3>
+        <label for="a">Nhập số a: </label><input id="a" type="number"> &nbsp;
+        <label for="b">Nhập số b: </label><input id="b" type="number">
+        <br><br>
+        <button id="result2" onclick="bai_2()">Kiểm tra</button>
+    </form>
+</div>
+</body>
+</html>
+<script src="13-9.js"></script>
