@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 02</title>
+</head>
+<body>
+<!--Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.-->
+<div>
+    <form>
+        <h3>
+            Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+        </h3>
+        <label for="num1">Nhập một số: </label><input id="num1" name="num1" type="number" oninput="bai_1(this.value)" onchange="bai_1(this.value)">
+        <br><br>
+        <label>Kết quả bình phương: </label><label id="result1"></label>
+    </form>
+</div>
+<!--Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được-->
+<div>
+    <form>
+        <h3>
+            Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được
+        </h3>
+        <label for="r">Nhập bán kính hình tròn: </label><input id="r" name="r" type="number">
+        <br><br>
+        <label>Chu vi hình tròn: </label><label id="chuVi"></label>
+        <br><br>
+        <label>Diện tích hình tròn: </label><label id="dienTich"></label>
+        <br><br>
+        <button id="result2" type="button" onclick="bai_2()">Tính C và S</button>
+    </form>
+</div>
+<!--Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.-->
+<div>
+    <form>
+        <h3>
+            Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+        </h3>
+        <label for="num3">Nhập một số: </label><input id="num3" name="num3" type="number" oninput="bai_3(this.value)" onchange="bai_3(this.value)">
+        <br><br>
+        <label>Kết quả giai thừa: </label><label id="result3"></label>
+    </form>
+</div>
+<!--Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.-->
+<div>
+    <form>
+        <h3>
+            Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+        </h3>
+        <button id="result4" type="button" onclick="bai_4()">Bài 4</button>
+    </form>
+</div>
+<!--Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.-->
+<div>
+    <form>
+        <h3>
+            Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+        </h3>
+        <label for="numa">Nhập số a: </label><input id="numa" name="numa" type="number"> &nbsp;
+        <label for="numb">Nhập số b: </label><input id="numb" name="numb" type="number"> &nbsp;
+        <label for="numc">Nhập số c: </label><input id="numc" name="numc" type="number">
+        <br><br>
+        <button type="button" onclick="bai_5()">Tìm số nhỏ nhất</button>
+    </form>
+</div>
+<!--Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. Nếu là nguyên dương trả về true, ngược lại trả về false.-->
+<div>
+    <form>
+        <h3>
+            Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. Nếu là nguyên dương trả về true, ngược lại trả về false.
+        </h3>
+        <label for="num6">Nhập vào một số: </label><input id="num6" name="num6" type="number">
+        <br><br>
+        <button type="button" onclick="bai_6()">Kiểm tra</button>
+    </form>
+</div>
+<!--Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.-->
+<div>
+    <form>
+        <h3>
+            Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+        </h3>
+        <label for="soNa">Nhập số nguyên a: </label><input id="soNa" name="soNa" type="number"> &nbsp;
+        <label for="soNb">Nhập số nguyên b: </label><input id="soNb" name="soNb" type="number">
+        <br><br>
+        <button type="button" onclick="bai_7()">Đổi chỗ</button>
+        <br><br>
+        <label>Hai số nguyên vừa nhập: </label><label id="ab"></label>
+        <br><br>
+        <label>Hai số nguyên đổi chổ: </label><label id="ba"></label>
+    </form>
+</div>
+<!--Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.-->
+<div>
+    <form>
+        <h3>Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.</h3>
+        <label>Mảng vừa nhập là: </label><label id="dsMangBD"></label>
+        <br><br>
+        <label>Mảng đảo ngược là: </label><label id="dsMangDN"></label>
+        <br><br>
+        <button type="button" onclick="bai_8()">Bài 8</button>
+    </form>
+</div>
+<!--Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1. -->
+<div>
+    <form>
+        <h3>
+            Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+            Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+        </h3>
+        <button type="button" onclick="bai_9()">Bài 9</button>
+    </form>
+</div>
+</body>
+</html>
+<script src="BT_LT_Ham_2.js"></script>
